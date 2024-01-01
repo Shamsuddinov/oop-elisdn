@@ -48,16 +48,15 @@ class Student
         return $this->firstName . ' ' . $this->secondName;
     }
 
-    public static function getList($info = '')
+    public static function getList()
     {
         return [
-            1 => '1-ma\'lumot',
-            2 => '2-ma\'lumot',
+            1 => 'qandaydir listlarni olish uchun biz aloxida obyeky yaratishimiz shart bo\'lmasligi kerak. Shu sababli listlar uchun static kalit so\'zidan foydalanishimiz to\'g\'ri bo\'ladi.',
         ];
     }
 }
 
 echo "<pre>";
-print_r(Student::getList('qandaydir listlarni olish uchun biz aloxida obyeky yaratishimiz shart bo\'lmasligi kerak. Shu sababli listlar uchun static kalit so\'zidan foydalanishimiz to\'g\'ri bo\'ladi.'));
+print_r(Student::getList());
 echo "</pre>";
 die();
