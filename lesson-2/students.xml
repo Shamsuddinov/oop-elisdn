@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students>
+    <student>
+        <firstName>Karim</firstName>
+        <lastName>Sharifov</lastName>
+        <date>19-01-1993</date>
+    </student>
+    <student>
+        <firstName>Nasriddin</firstName>
+        <lastName>Nosirov</lastName>
+        <date>22-02-1994</date>
+    </student>
+    <student>
+        <firstName>Xasan</firstName>
+        <lastName>Norimonov</lastName>
+        <date>11-05-1997</date>
+    </student>
+</students>
