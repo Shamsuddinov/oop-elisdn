@@ -7,7 +7,7 @@ class Student
     private $name;
     private $type;
 
-    public function __construct($name, $type)
+    private function __construct($name, $type)
     {
         $this->name = $name;
         $this->type = $type;
