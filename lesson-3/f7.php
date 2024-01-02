@@ -47,10 +47,15 @@ class Employee{
 
     public function __construct(Name $name, Phone $phone, Address $address)
     {
-        $this->id = rand(10000, 99999);
+        $this->id = $this->generateId();
         $this->name = $name;
         $this->phone = $phone;
         $this->address = $address;
+    }
+
+    public function generateId()
+    {
+        return rand(10000, 99999);
     }
 }
 
