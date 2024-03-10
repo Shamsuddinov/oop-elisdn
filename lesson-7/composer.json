@@ -1,0 +1,16 @@
+{
+    "name": "shamsuddinov/lesson-7",
+    "description": "ok",
+    "autoload": {
+        "psr-4": {
+            "Shamsuddinov\\Lesson7\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "shamsuddinov",
+            "email": "shamsuddinova@gmail.com"
+        }
+    ],
+    "require": {}
+}

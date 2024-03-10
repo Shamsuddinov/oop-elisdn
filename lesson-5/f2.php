@@ -2,7 +2,7 @@
 
 class Measurer
 {
-    public function getMax(Measurable $obj)
+    public function getMax(iMeasurable $obj)
     {
         return max($obj->getWidth(), $obj->getHeight());
     }
@@ -11,14 +11,14 @@ class Measurer
 // Bunday qilinishi sababi barcha klasslarni mana shu obyekt
 // yordamida birlashtirish qulay, bu tur uchun aloxida klass yaratish
 // shart, shunda u oson birlashtiriladi.
-interface Measurable
+interface iMeasurable
 {
     public function getWidth();
 
     public function getHeight();
 }
 
-class Table implements Measurable
+class Table implements iMeasurable
 {
     public function getWidth()
     {
@@ -31,7 +31,7 @@ class Table implements Measurable
     }
 }
 
-class Shelf implements Measurable
+class Shelf implements iMeasurable
 {
     public function getWidth()
     {
@@ -44,7 +44,9 @@ class Shelf implements Measurable
     }
 }
 
-$obj = new Table();
+$obj1 = new Table();
+$obj2 = new Shelf();
 $measure = new Measurer();
 
-echo $measure->getMax($obj) . PHP_EOL;
+echo $measure->getMax($obj1) . PHP_EOL;
+echo $measure->getMax($obj2) . PHP_EOL;
